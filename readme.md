@@ -10,7 +10,7 @@ This project explores user behavior on Spotify using a structured survey dataset
 - **Segmentation & Risk Scoring**: Categorizes users into churn risk levels and visualizes those segments by age group and plan type.
 - **Notebook-based workflow**: Clean separation between exploratory and predictive modeling steps for clarity and reproducibility.
 
-## 📊 Dataset Description
+## 📊 Dataset Description (View detailed info in dataset_info.md)
 
 - Responses from 522 Spotify users covering age, gender, listening habits, podcast preferences, mood-based behavior, and subscription history.
 - Data was collected via structured survey and made publicly available on Kaggle.
