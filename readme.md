@@ -1,46 +1,37 @@
-# 📊 Spotify User Behavior Dataset
+# Spotify User Segmentation and Churn Prediction
 
-This dataset is based on a structured survey designed to explore Spotify users' music and podcast behavior, premium subscription interest, and listening patterns.
+This project explores user behavior on Spotify using a structured survey dataset collected from 522 individuals. The goal is to generate insights about user preferences, segment behaviors, and build predictive models to support business decisions such as premium subscription targeting and churn management.
 
-The data was sourced from [Kaggle](https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset/data) and contains responses from 522 individuals.
+## 📂 Project Structure
 
----
+- **EDA**: Visualizes user demographics, music & podcast preferences, subscription behavior, and engagement patterns.
+- **Churn Modeling**: Builds classification models (Logistic Regression, Random Forest) to predict likelihood of premium user churn.
+- **Premium Subscription Intent** *(planned)*: Predicts whether users are willing to upgrade to Premium based on behavioral traits.
+- **Segmentation & Risk Scoring**: Categorizes users into churn risk levels and visualizes those segments by age group and plan type.
+- **Notebook-based workflow**: Clean separation between exploratory and predictive modeling steps for clarity and reproducibility.
 
-## 👤 Author & License
+## 📊 Dataset Description
 
+- Responses from 522 Spotify users covering age, gender, listening habits, podcast preferences, mood-based behavior, and subscription history.
+- Data was collected via structured survey and made publicly available on Kaggle.
+
+**Dataset Source**  
 - **Author**: Meera Ajayakumar  
-- **Source**: [Kaggle Profile](https://www.kaggle.com/meeraajayakumar)  
-- **License**: Open for educational and research use
+- **Link**: [Spotify User Behavior Dataset (Kaggle)](https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset/data)  
+- **License**: Open for educational and research purposes
+
+## 📌 Highlights
+
+- Cleaned, transformed, and visualized 20+ survey variables
+- Handled categorical encoding, null value imputation, and feature engineering
+- Performed chi-square analysis to select important predictors
+- Built and evaluated churn models using balanced class techniques
+- Visualized churn risk distribution by age and plan type for actionable targeting
 
 ---
 
-## 🧾 Survey Questions and Corresponding Columns
+## 🚀 Future Work
 
-| Column Name                   | Survey Question                                                                                       |
-|------------------------------|--------------------------------------------------------------------------------------------------------|
-| `Age`                        | What is your age group?                                                                                |
-| `Gender`                     | What is your gender?                                                                                   |
-| `spotify_usage_period`       | How long have you been using Spotify?                                                                 |
-| `spotify_listening_device`   | Which device do you primarily use to listen to Spotify?                                                |
-| `spotify_subscription_plan`  | Which Spotify subscription plan do you currently have?                                                 |
-| `premium_sub_willingness`    | Are you willing to take or continue a Premium subscription in the future?                             |
-| `preffered_premium_plan`     | If Premium or willing to take Premium, what amount do you pay for the subscription?                   |
-| `preferred_listening_content`| What do you prefer to listen to more — music or podcasts?                                             |
-| `fav_music_genre`            | What genre(s) of music do you enjoy the most?                                                         |
-| `music_time_slot`            | What is your favorite time slot to listen to music?                                                   |
-| `music_Influencial_mood`     | Which moods or situations most influence your choice of music?                                        |
-| `music_lis_frequency`        | When do you listen to music most often?                                                               |
-| `music_expl_method`          | How do you discover new music on Spotify?                                                             |
-| `music_recc_rating`          | How do you rate Spotify’s music recommendations?                                                      |
-| `pod_lis_frequency`          | How often do you listen to podcasts?                                                                  |
-| `fav_pod_genre`              | What genre(s) of podcasts do you enjoy the most?                                                      |
-| `preffered_pod_format`       | What podcast format do you generally prefer (audio, video, etc.)?                                     |
-| `pod_host_preference`        | Do you prefer podcasts hosted by well-known personalities or lesser-known/unknown individuals?        |
-| `preffered_pod_duration`     | Do you prefer shorter podcast episodes (under 30 minutes) or longer ones (over 30 minutes)?           |
-| `pod_variety_satisfaction`   | Are you satisfied with the variety and availability of podcasts on Spotify?                           |
-
----
-
-## 🔗 Dataset Link
-
-- [Spotify User Behavior Dataset on Kaggle](https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset/data)
+- Predict likelihood of subscription upgrade (Premium conversion modeling)
+- Explore unsupervised clustering for Spotify user personas
+- Deploy churn prediction pipeline as a dashboard or API
