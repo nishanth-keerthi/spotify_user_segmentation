@@ -1,0 +1,115 @@
+Column,Text Label,Encoded Value
+age,12-20,0
+age,20-35,1
+age,35-60,2
+age,6-12,3
+age,60+,4
+gender,Female,0
+gender,Male,1
+gender,Others,2
+lifetime_usage_months,0-5,0
+lifetime_usage_months,12-23,1
+lifetime_usage_months,23+,2
+lifetime_usage_months,6-11,3
+music_output,Laptop Only,0
+music_output,Multi-Device User,1
+music_output,Smart Speaker Only,2
+music_output,Smartphone Only,3
+music_output,Wearable Only,4
+preferred_listening_content,Music,0
+preferred_listening_content,Podcast,1
+fav_music_genre,All,0
+fav_music_genre,"Classical & melody, dance",1
+fav_music_genre,Electronic/Dance,2
+fav_music_genre,Kpop,3
+fav_music_genre,Melody,4
+fav_music_genre,Old songs,5
+fav_music_genre,Pop,6
+fav_music_genre,Rap,7
+fav_music_genre,Rock,8
+fav_music_genre,classical,9
+fav_music_genre,trending songs random,10
+music_time_slot,Afternoon,0
+music_time_slot,Morning,1
+music_time_slot,Night,2
+music_influencial_mood,Relaxation and stress relief,0
+music_influencial_mood,"Relaxation and stress relief, Sadness or melancholy",1
+music_influencial_mood,"Relaxation and stress relief, Sadness or melancholy, Social gatherings or parties",2
+music_influencial_mood,"Relaxation and stress relief, Social gatherings or parties",3
+music_influencial_mood,"Relaxation and stress relief, Uplifting and motivational",4
+music_influencial_mood,"Relaxation and stress relief, Uplifting and motivational, Sadness or melancholy",5
+music_influencial_mood,"Relaxation and stress relief, Uplifting and motivational, Sadness or melancholy, Social gatherings or parties",6
+music_influencial_mood,"Relaxation and stress relief, Uplifting and motivational, Social gatherings or parties",7
+music_influencial_mood,Sadness or melancholy,8
+music_influencial_mood,"Sadness or melancholy, Social gatherings or parties",9
+music_influencial_mood,Social gatherings or parties,10
+music_influencial_mood,Uplifting and motivational,11
+music_influencial_mood,"Uplifting and motivational, Sadness or melancholy",12
+music_influencial_mood,"Uplifting and motivational, Sadness or melancholy, Social gatherings or parties",13
+music_influencial_mood,"Uplifting and motivational, Social gatherings or parties",14
+preferred_plan_type,Duo plan,0
+preferred_plan_type,Family Plan,1
+preferred_plan_type,Individual Plan,2
+preferred_plan_type,Student Plan,3
+preferred_plan_type,nan,4
+music_listening_frequency_grouped,Leisure,0
+music_listening_frequency_grouped,"Leisure, Night/Before Bed, Traveling, Workout",1
+music_listening_frequency_grouped,"Leisure, Office",2
+music_listening_frequency_grouped,"Leisure, Office, Studying, Traveling",3
+music_listening_frequency_grouped,"Leisure, Office, Studying, Traveling, Workout",4
+music_listening_frequency_grouped,"Leisure, Office, Traveling",5
+music_listening_frequency_grouped,"Leisure, Office, Traveling, Workout",6
+music_listening_frequency_grouped,"Leisure, Office, Workout",7
+music_listening_frequency_grouped,"Leisure, Studying",8
+music_listening_frequency_grouped,"Leisure, Studying, Traveling",9
+music_listening_frequency_grouped,"Leisure, Studying, Traveling, Workout",10
+music_listening_frequency_grouped,"Leisure, Studying, Workout",11
+music_listening_frequency_grouped,"Leisure, Traveling",12
+music_listening_frequency_grouped,"Leisure, Traveling, Workout",13
+music_listening_frequency_grouped,"Leisure, Workout",14
+music_listening_frequency_grouped,"Night/Before Bed, Traveling",15
+music_listening_frequency_grouped,Office,16
+music_listening_frequency_grouped,"Office, Studying, Traveling",17
+music_listening_frequency_grouped,"Office, Studying, Traveling, Workout",18
+music_listening_frequency_grouped,"Office, Studying, Workout",19
+music_listening_frequency_grouped,"Office, Traveling",20
+music_listening_frequency_grouped,"Office, Traveling, Workout",21
+music_listening_frequency_grouped,"Office, Workout",22
+music_listening_frequency_grouped,Random,23
+music_listening_frequency_grouped,Social,24
+music_listening_frequency_grouped,Studying,25
+music_listening_frequency_grouped,"Studying, Traveling",26
+music_listening_frequency_grouped,"Studying, Traveling, Workout",27
+music_listening_frequency_grouped,"Studying, Workout",28
+music_listening_frequency_grouped,Traveling,29
+music_listening_frequency_grouped,"Traveling, Workout",30
+music_listening_frequency_grouped,Workout,31
+music_exploration_method_grouped,Others,0
+music_exploration_method_grouped,"Others, Playlists",1
+music_exploration_method_grouped,"Others, Playlists, Radio",2
+music_exploration_method_grouped,"Others, Playlists, Radio, Recommendations",3
+music_exploration_method_grouped,"Others, Playlists, Recommendations",4
+music_exploration_method_grouped,"Others, Radio",5
+music_exploration_method_grouped,"Others, Radio, Recommendations",6
+music_exploration_method_grouped,"Others, Recommendations",7
+music_exploration_method_grouped,"Others, Recommendations, Social Media / Friends",8
+music_exploration_method_grouped,"Others, Social Media / Friends",9
+music_exploration_method_grouped,Playlists,10
+music_exploration_method_grouped,"Playlists, Radio",11
+music_exploration_method_grouped,"Playlists, Radio, Recommendations",12
+music_exploration_method_grouped,"Playlists, Recommendations",13
+music_exploration_method_grouped,Radio,14
+music_exploration_method_grouped,"Radio, Recommendations",15
+music_exploration_method_grouped,Recommendations,16
+favorite_podcast_genre_grouped,Business / Finance,0
+favorite_podcast_genre_grouped,Comedy,1
+favorite_podcast_genre_grouped,Educational,2
+favorite_podcast_genre_grouped,Food & Cooking,3
+favorite_podcast_genre_grouped,Health & Wellness,4
+favorite_podcast_genre_grouped,Other / Niche,5
+favorite_podcast_genre_grouped,Self-Help / Spiritual,6
+favorite_podcast_genre_grouped,Sports,7
+favorite_podcast_genre_grouped,Stories / Fiction,8
+favorite_podcast_genre_grouped,Technology,9
+favorite_podcast_genre_grouped,True Crime / Mystery,10
+favorite_podcast_genre_grouped,nan,11
