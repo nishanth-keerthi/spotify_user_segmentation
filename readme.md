@@ -1,37 +1,85 @@
 # Spotify User Segmentation and Churn Prediction
 
-This project explores user behavior on Spotify using a structured survey dataset collected from 522 individuals. The goal is to generate insights about user preferences, segment behaviors, and build predictive models to support business decisions such as premium subscription targeting and churn management.
+This project explores Spotify user behavior using a structured survey dataset of 522 respondents. It covers exploratory analysis, churn prediction, premium subscription modeling, user segmentation, and explainable AI techniques to uncover behavioral insights that can inform business decisions.
 
-## 📂 Project Structure
+---
 
-- **EDA**: Visualizes user demographics, music & podcast preferences, subscription behavior, and engagement patterns.
-- **Churn Modeling**: Builds classification models (Logistic Regression, Random Forest) to predict likelihood of premium user churn.
-- **Premium Subscription Intent** *(planned)*: Predicts whether users are willing to upgrade to Premium based on behavioral traits.
-- **Segmentation & Risk Scoring**: Categorizes users into churn risk levels and visualizes those segments by age group and plan type.
-- **Notebook-based workflow**: Clean separation between exploratory and predictive modeling steps for clarity and reproducibility.
+## 📁 Project Overview
 
-## 📊 Dataset Description (View detailed info in dataset_info.md)
+| Module | Description |
+|--------|-------------|
+| `01_eda.ipynb` | Comprehensive exploratory data analysis including user demographics, listening patterns, content preferences, and subscription behaviors. |
+| `02_Churn_Analysis.ipynb` | Predicts which Premium users are likely to churn using models like Logistic Regression and Random Forest with class imbalance handling and feature importance analysis. |
+| `03_Premium_Intent_Prediction.ipynb` | Predicts which Free users are likely to upgrade to Premium using models like XGBoost and SVM, with probability segmentation and SHAP-based explainability. |
+| `datasets/` | Contains raw survey data, cleaned processed data, label encoding mappings, and model-ready datasets. |
+| `dataset_info.md` | Details the original survey dataset, question mappings, and variable descriptions. |
 
-- Responses from 522 Spotify users covering age, gender, listening habits, podcast preferences, mood-based behavior, and subscription history.
-- Data was collected via structured survey and made publicly available on Kaggle.
+---
 
-**Dataset Source**  
-- **Author**: Meera Ajayakumar  
-- **Link**: [Spotify User Behavior Dataset (Kaggle)](https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset/data)  
-- **License**: Open for educational and research purposes
+## 📊 Dataset Description (Full details in `dataset_info.md`)
 
-## 📌 Highlights
+- Collected via structured survey of 522 Spotify users.
+- Covers age, gender, platform usage, moods, music/podcast habits, subscription type, and willingness to upgrade to Premium.
+- Cleaned, encoded, and enriched with additional features for modeling.
 
-- Cleaned, transformed, and visualized 20+ survey variables
-- Handled categorical encoding, null value imputation, and feature engineering
-- Performed chi-square analysis to select important predictors
-- Built and evaluated churn models using balanced class techniques
-- Visualized churn risk distribution by age and plan type for actionable targeting
+**Source**  
+- Author: Meera Ajayakumar  
+- Dataset: [Spotify User Behavior on Kaggle](https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset/data)
+
+---
+
+## 🧠 Key Features & Analysis
+
+### ✅ Exploratory Data Analysis (EDA)
+- Distribution of users by age, gender, and device
+- Preferred content (music vs podcast), genres, and listening time slots
+- Subscription plan breakdown (Free vs Premium) and pricing patterns
+- Mood-based music behavior and frequency clusters
+- Chi-square analysis to assess relationships between predictors and outcomes
+
+### ✅ Churn Analysis (Premium Users)
+- Models used: Logistic Regression (with class_weight), Random Forest
+- Handled class imbalance using stratification and class weighting
+- Precision-recall trade-off evaluated for churner detection
+- Feature importance plots and risk segmentation by age group and plan type
+- Churn probability prediction with grouping into Low, Medium, High risk segments
+
+### ✅ Premium Subscription Intent Prediction (Free Users)
+- Models used: Random Forest, Support Vector Machine (SVM), XGBoost
+- Predicts likelihood of a free user upgrading to Premium
+- Stratified train-test split with imbalanced classification handled
+- Predicted probabilities visualized and segmented into conversion tiers
+- Confusion matrix and classification metrics interpreted from a business lens
+
+### ✅ Explainability with SHAP
+- Global feature importance via SHAP values for XGBoost model
+- SHAP summary and beeswarm plots for behavioral understanding
+- Local prediction explanations with waterfall plots for individual users
+- Key drivers: plan type, listening frequency, usage lifetime, mood, and exploration method
+
+---
+
+## 📌 Summary of Business Insights
+
+- Users preferring Family plans or dissatisfied with podcasts are more likely to churn.
+- Churn risk is elevated for certain age groups and plan types (e.g., Students).
+- Free users most likely to convert have distinct listening habits and value personalization.
+- Models are optimized for high recall on churners and converters to support intervention strategies.
+- SHAP helps uncover transparent explanations of predictions for business stakeholders.
+
+---
+
+## 📈 Results
+
+- Churn Model Accuracy: ~97% (Random Forest), with excellent churner recall
+- Premium Intent Model Accuracy: ~80% (XGBoost), with balanced performance
+- Feature Importance consistently highlighted pricing sensitivity, plan type, content preference, and engagement patterns
 
 ---
 
 ## 🚀 Future Work
 
-- Predict likelihood of subscription upgrade (Premium conversion modeling)
-- Explore unsupervised clustering for Spotify user personas
-- Deploy churn prediction pipeline as a dashboard or API
+- Deploy models as REST APIs or dashboards for product teams
+- Perform unsupervised clustering for Spotify user personas
+- Conduct A/B experiments on predicted High-Risk/High-Intent users
+- Extend SHAP to include interaction values or temporal components (if timestamped data is available)
